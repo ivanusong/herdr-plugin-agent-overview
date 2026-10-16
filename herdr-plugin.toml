@@ -1,0 +1,23 @@
+id = "agent-overview"
+name = "Agent Overview"
+version = "0.1.0"
+min_herdr_version = "0.9.4"
+description = "全 Session 的 Agent 网格总览：只读实时预览 + Enter 跳转原 pane"
+platforms = ["macos", "linux"]
+
+[[build]]
+command = ["sh", "scripts/build.sh"]
+
+[[actions]]
+id = "open"
+title = "Toggle Agent Overview"
+contexts = ["workspace"]
+command = ["sh", "scripts/open.sh"]
+
+[[panes]]
+id = "overview"
+title = "Agent Overview"
+placement = "popup"
+width = "100%"
+height = "100%"
+command = ["./target/release/herdr-agent-overview"]
