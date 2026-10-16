@@ -1,8 +1,10 @@
-# herdr-plugin-agent-overview 中文说明
+# 中文说明
 
 [English README](../README.md)
 
-全屏、只读的 **Herdr Agent 总览**：每个 Agent pane 一张实时 ANSI 卡片，
+![screenshot](../assets/screenshot.png)
+
+全屏、只读的 **Herdr Agent 总览**：将 herdr 中的 agnts 汇集到一个总窗口中展示，每个 Agent pane 一张实时卡片，
 按 workspace 分区，一键跳回原 pane。默认只显示 **Working** 的 Agent，
 按 `f` 在 `Working → Done → Idle` 之间循环切换。
 

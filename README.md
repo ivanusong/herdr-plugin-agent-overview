@@ -1,5 +1,7 @@
 # herdr-plugin-agent-overview
 
+![screenshot](./assets/screenshot.png)
+
 A full-screen, read-only **agent overview for [Herdr](https://herdr.dev)**:
 one live ANSI tile per agent pane, grouped by workspace, with a one-keystroke
 jump back to the real pane. By default it shows only **working agents** —
