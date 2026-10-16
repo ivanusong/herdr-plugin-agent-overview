@@ -54,7 +54,7 @@ fn main() -> ExitCode {
 }
 
 fn plugin_id() -> String {
-    std::env::var("HERDR_PLUGIN_ID").unwrap_or_else(|_| "agent-overview".to_string())
+    std::env::var("HERDR_PLUGIN_ID").unwrap_or_else(|_| "ivan.agent-overview".to_string())
 }
 
 fn run_toggle() -> ExitCode {

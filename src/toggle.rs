@@ -102,7 +102,7 @@ pub fn run_toggle(client: &HerdrClient, plugin_id: &str, entrypoint: &str) -> i3
         log("[toggle] 检测到本插件 popup 正在运行，发送 popup.close");
         return match client.popup_close() {
             Ok(_) => {
-                println!("agent-overview popup 已关闭");
+                println!("ivan.agent-overview popup 已关闭");
                 0
             }
             Err(err) => {
@@ -110,7 +110,7 @@ pub fn run_toggle(client: &HerdrClient, plugin_id: &str, entrypoint: &str) -> i3
                 log(&format!("[toggle] popup.close 失败: {err}"));
                 clear_state();
                 if err.code == "popup_not_open" {
-                    println!("agent-overview popup 已退出");
+                    println!("ivan.agent-overview popup 已退出");
                     0
                 } else {
                     eprintln!("关闭 popup 失败: {err}");
@@ -136,7 +136,7 @@ pub fn run_toggle(client: &HerdrClient, plugin_id: &str, entrypoint: &str) -> i3
             1
         }
         Err(err) => {
-            eprintln!("打开 agent-overview 失败: {err}");
+            eprintln!("打开 ivan.agent-overview 失败: {err}");
             1
         }
     }
